@@ -1,0 +1,42 @@
+body{
+    background-color: crimson;
+    color: #fff;
+
+    .wrapper{
+        transform: translate(50px, 50px);
+    }
+    .clock{
+        margin: 50px auto;
+        
+        span{
+            background-color: rgba(14, 11, 9, 0.45);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px -1px .55px 2px rgba(0,0,0, .2);
+            margin: 0 4px;
+        }
+
+        span:nth-last-child(1){
+            animation-name: Inseconds;
+            transition: all 250ms ease-in-out;
+            animation-duration: 800ms;
+            animation-iteration-count: infinite;
+
+            @keyframes Inseconds {
+                0%{
+                    opacity: 0;
+                }
+
+                50%{
+                    opacity: .4
+                }
+
+                100%{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+
+}
